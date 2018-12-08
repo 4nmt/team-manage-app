@@ -1,0 +1,49 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+
+  &__title {
+    font-weight: 400;
+    font-size: 22px;
+    width: 100%;
+    line-height: 59px;
+  }
+
+  &__container {
+    height: 100%;
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__body {
+    margin-top: 30px;
+    font-size: 17px;
+    text-decoration: none;
+
+    & > ul > a:hover {
+      text-decoration: none !important;
+    }
+    &__item {
+      height: 50px;
+      padding: 10px;
+      border-left: 4px solid transparent;
+      color: white;
+
+      &:hover {
+        border-color: #f44336;
+        background: white;
+        color: rgb(52, 58, 64);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.is_active {
+  border-color: #f44336;
+  background: white;
+  color: rgb(52, 58, 64);
+  font-weight: 600;
+}
